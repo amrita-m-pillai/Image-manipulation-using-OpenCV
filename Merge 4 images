@@ -1,0 +1,18 @@
+import cv2
+import numpy as np
+path1= "./Tom_Cruise.jpg"
+image1 = cv2.imread(path1)
+path2= "./rdj.jpg"
+image2 = cv2.imread(path2)
+
+
+image1 = cv2.resize(image1, (200,300))
+image2=cv2.resize(image2,(200,300))
+
+h_stack1 = np.hstack((image1, image2))
+h_stack2 = np.hstack((image2, image1))
+v_stack = np.vstack((h_stack1,h_stack2))
+
+cv2.imshow("Vertical stack",v_stack)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
