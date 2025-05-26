@@ -16,6 +16,3 @@ This project demonstrates basic image processing techniques using OpenCV, includ
 ## Usage
 
 1. Place your input images in the project directory.
-2. Run the script to perform grayscale conversion and merge images:
-   ```bash
-   python image_manipulation.py
